@@ -1,0 +1,20 @@
+/** @type {import('tailwindcss').Config} */
+
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {
+      backgroundImage: {
+        'hero': "linear-gradient( rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('../dist/img/herobg.jpg')",
+        
+      },
+
+
+      fontFamily: {
+        'opensans': ['"Open Sans"','sans-serif'],
+       'titillium': ['"Titillium Web"','sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+}

@@ -1,0 +1,16 @@
+{
+  "name": "westcorp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^3.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "tailwindcss build src/input.css -o dist/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
