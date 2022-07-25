@@ -874,6 +874,11 @@ video {
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
 .bg-hero {
   background-image: linear-gradient( rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('../dist/img/herobg.jpg');
 }
