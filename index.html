@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/jquery-ui.min.css" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
+    <link href="/dist/style.css" rel="stylesheet">
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Titillium+Web&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-gray-100">
@@ -16,26 +19,26 @@
     <div class=" flex flex-col justify-between  h-screen text-slate-200 bg-hero bg-cover bg-center  ">
         <!-- navigation bar -->
         <header>
-            
+
             <div class="flex flex-row justify-between p-2 px-6 font-opensans">
 
                 <div class="block md:hidden">
                     <button class="text-3xl">
                         <span>
-                          &#9776;
+                            &#9776;
                         </span>
                     </button>
                 </div>
                 <div class="hidden md:block">
                     <a href="index.html" class="text-xl hover:text-blue-500">
                         <span>
-                           Home
+                            Home
                         </span>
                     </a>
                 </div>
 
 
-                
+
                 <div class="hidden md:block">
                     <a href="#" class="text-xl  hover:text-blue-500">
                         <span>About</span>
@@ -55,68 +58,131 @@
             </div>
         </header>
         <!-- end navigation bar  -->
- <div class="flex  flex-col md:flex-row justify-evenly font-titillium  ">
-   <div class="bg-white rounded-full hidden md:block  mx-auto">
-        <img src="../dist/img/avater2.png" alt="" class="w-150px  md:w-300px  mx-auto " >
+        <div class="flex  flex-col md:flex-row justify-evenly font-titillium  ">
+            <div class="bg-white rounded-full hidden md:block  mx-auto">
+                <img src="../dist/img/avater2.png" alt="" class="w-150px  md:w-300px  mx-auto ">
+            </div>
+            <div class="md:w-1/2 leading-loose mx-auto p-8">
+                <h3>
+                    <span class="text-xl tracking-wide font-bold">Hello! I'm</span> <br>
+                    <span class="text-4xl md:text-5xl tracking-wide font-black  font-titillium">
+                        RICHARD EJIKE
+                    </span>
+                </h3>
+                <p class="md:w-1/2 p-2  font-opensans">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Laborum numquam eos modi atque pariatur incidunt commodi culpa.
+                </p>
+                <button class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded-full">Get Resume <span ><img src="dist/icons/download-solid.svg" alt=""class="w-4 h-3 mx-1 inline text-white"></span></button>
+            </div>
+
+        </div>
+
+
+        <div class="">
+
+        </div>
+
     </div>
-  <div class="md:w-1/2 leading-loose mx-auto p-8" >
-        <h3>
-            <span class="text-xl tracking-wide font-bold">Hello! I'm</span> <br>
-            <span class="text-4xl md:text-5xl tracking-wide font-black  font-titillium">
-            RICHARD EJIKE
-        </span>
-        </h3>
-        <p class="md:w-1/2 p-2  font-opensans">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            Laborum numquam eos modi atque pariatur incidunt commodi culpa.
-                    </p>
-        <button class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded-full">Get Resume</button>
-    </div>
-   
- </div>
-
-
- <div class="">
-
- </div>
-
-    </div>
-        <!-- end carosel wraper -->
+    <!-- end carosel wraper -->
     <!-- main -->
-<div  class="p-6 ">
-    <main>
-        <span class="w-1/2 font-titillium"><span class="mx-3 text-2xl md:text-3xl font-extrabold text-slate-400">||</span> <span  class="text-xl md:text-2xl font-bold text-slate-500"> My Service</span></span>
-           <h2 class="capitalize p-2  font-extrabold font-titillium text-2xl md:text-3xl  text-slate-600">what  service do i offer?</h2>
-           <div class="flex flex-col md:flex-row justify-around md:m-2 md:p-2 p-6 ">
-              <div class="  mb-10 md:mb-5 md:mx-3 max-w-lg w-full border-y-4 border-blue-500  md:w-1/2 rounded-lg overflow-hidden shadow-xl p-4 ">
-               <img src="dist/icons/frontend-icon.png" alt="" class="w-24 mx-auto object-center h-24"> 
-               <h3 class="text-xl capitalize font-titillium text-slate-600 py-3 text-center font-bold ">frontend development</h3>
-             <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5">  HTML</h6>
-             <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5">  CSS</h6>
-             <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5">  JAVASCRIPT</h6>
-             <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5">  VUEJS</h6>
-             <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> JQUERY</h6>
-             <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> BOOTSRAP</h6>
-             <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> TAILWIND</h6>
+    <div class="p-6 ">
+        <main>
+             <!-- services -->
+            <div>
+               
+                <span class="w-1/2 font-titillium"><span
+                        class="mx-3 text-2xl md:text-3xl font-extrabold text-slate-400">||</span> <span
+                        class="text-xl md:text-2xl font-bold text-slate-500"> My Service</span></span>
+                <h2 class="capitalize p-2  font-extrabold font-titillium text-2xl md:text-3xl  text-slate-600">what
+                    service do i offer?</h2>
+                <div class="flex flex-col md:flex-row justify-around md:m-2 md:p-2 p-6 ">
+                    <div
+                        class="  mb-10 md:mb-5 md:mx-3 max-w-lg w-full border-y-4 border-blue-500  md:w-1/2 rounded-lg overflow-hidden shadow-xl p-4 ">
+                        <img src="dist/icons/frontend-icon.png" alt="" class="w-24 mx-auto object-center h-24">
+                        <h3 class="text-xl capitalize font-titillium text-slate-600 py-3 text-center font-bold ">
+                            frontend development</h3>
+                        <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img
+                                src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> HTML</h6>
+                        <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img
+                                src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> CSS</h6>
+                        <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img
+                                src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> JAVASCRIPT
+                        </h6>
+                        <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img
+                                src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> VUEJS</h6>
+                        <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img
+                                src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> JQUERY</h6>
+                        <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img
+                                src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> BOOTSRAP
+                        </h6>
+                        <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img
+                                src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> TAILWIND
+                        </h6>
+                    </div>
+                    <div
+                        class="  mb-5 md:mb-5 md:mx-3 max-w-lg w-full md:w-1/2  rounded-lg overflow-hidden shadow-xl border-y-4 border-blue-500 p-4">
+                        <img src="dist/icons/backend-icon.png" alt="" class="w-24 mx-auto object-center h-24">
+                        <h3 class="text-xl capitalize font-titillium text-slate-600 py-3 text-center font-bold ">backend
+                            development</h3>
+                        <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img
+                                src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> PHP</h6>
+                        <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img
+                                src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> LARAVEL
+                        </h6>
+                        <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img
+                                src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> MYSQL</h6>
+                        <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img
+                                src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> POSTGREE
+                            SQL</h6>
+                    </div>
+
+
+
+                </div>
+                
             </div>
-            <div class="  mb-5 md:mb-5 md:mx-3 max-w-lg w-full md:w-1/2  rounded-lg overflow-hidden shadow-xl border-y-4 border-blue-500 p-4">
-               <img src="dist/icons/backend-icon.png" alt="" class="w-24 mx-auto object-center h-24"> 
-               <h3 class="text-xl capitalize font-titillium text-slate-600 py-3 text-center font-bold ">backend development</h3>
-             <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5"> PHP</h6>
-             <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5">  LARAVEL</h6>
-             <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5">  MYSQL</h6>
-             <h6 class=" text-sm font-semibold    text-slate-400 px-6 py-2 font-opensans"> <img src="dist/icons/angle-double-right-solid.svg" alt="" class="inline w-5 h-5">  POSTGREE SQL</h6>
+             <!-- End services -->
+
+            <div class="my-4">
+                <span class="w-1/2 font-titillium"><span
+                    class="mx-3 text-2xl md:text-3xl font-extrabold text-slate-400">||</span> <span
+                    class="text-xl md:text-2xl font-bold text-slate-500"> My Skill</span></span>
+            <h2 class="capitalize p-2  font-extrabold font-titillium text-2xl md:text-3xl  text-slate-600"> my special skill
+              ?</h2>
+              <button class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4  text-white rounded-full">Get Resume <span ><img src="dist/icons/download-solid.svg" alt=""class="w-4 h-3 mx-1 inline text-white"></span></button>
+            
+              
+                <div
+<<<<<<< HEAD
+                class=" p-5 m-5 md:m-5  max-w-full w-full  md:w-full  overflow-hidden ">
+=======
+                class=" p-5   max-w-full w-full  md:w-full  overflow-hidden ">
+>>>>>>> c06aba404c3ccea39fe5736163509b8cc35560c8
+                <div class="text-slate-600 text-xl font-bold font-titillium ">Communication</div>
+                <div id="progressbar" class="rounded-lg bg-slate-300 mb-3"><div class="progress-label ">Loading...</div></div>
+
+                <div class="text-slate-600 text-xl font-bold font-titillium ">Teamwork</div>
+                <div id="progressbar2" class="rounded-lg bg-slate-300 mb-3"><div class="progress-label2 ">Loading...</div></div>
+
+
+                <div class="text-slate-600 text-xl font-bold font-titillium ">Hardwork </div>
+
+                <div id="progressbar3" class="rounded-lg bg-slate-300 mb-3"><div class="progress-label3 ">Loading...</div></div>
+                           </div>
+
+             
+
+
             </div>
-           
-           
-
-           </div>
-           
 
 
-    </main>
-</div>
+        </main>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script  src="dist/scrollbar.js"></script>
 
 </body>
 
