@@ -11,7 +11,7 @@ module.exports = {
 
 
       fontFamily: {
-        'opensans': ['"Josefin Sans"','sans-serif'],
+        'josefinsans': ['"Josefin Sans"','sans-serif'],
        'titillium': ['"Titillium Web"','sans-serif'],
       },
     },
