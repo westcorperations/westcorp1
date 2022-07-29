@@ -7,6 +7,7 @@
     <link href="/dist/jquery-ui.min.css" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
     <link href="/dist/style.css" rel="stylesheet">
+    <link href="/dist/nav.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100" >
+<body class="bg-gray-100">
     <!-- carosel wrapper -->
     <div class=" flex flex-col justify-between  h-screen text-white bg-hero bg-cover bg-center  ">
         <!-- navigation bar -->
@@ -30,6 +31,15 @@
                         <i></i>
                     </span>
                 </div>
+                <div id="myNav" class="overlay md:hidden">
+                    <div class="overlay-content">
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#service">Service</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+
+                </div>
                 <div class="hidden md:block">
                     <a href="index.html" class="text-xl hover:text-blue-500">
                         <span>
@@ -41,17 +51,17 @@
 
 
                 <div class="hidden md:block">
-                    <a href="#" class="text-xl  hover:text-blue-500">
+                    <a href="#about" class="text-xl  hover:text-blue-500">
                         <span>About</span>
                     </a>
                 </div>
                 <div class="hidden md:block">
-                    <a href="#" class="text-xl  hover:text-blue-500">
+                    <a href="#service" class="text-xl  hover:text-blue-500">
                         <span>Service</span>
                     </a>
                 </div>
                 <div class="hidden md:block ">
-                    <a href="#" class="text-xl  hover:border-y-blue-500/100">
+                    <a href="#contact" class="text-xl  hover:border-y-blue-500/100">
                         <span>Contact</span>
                     </a>
                 </div>
@@ -71,8 +81,10 @@
                     </span>
                 </h3>
                 <p class="md:w-1/2 p-2 font-semibold font-josefinsans">
-                    I'm a dedicated and efficient full stack developer with years of expirence in designing and developing  frontend and backend web applications.
-                    Seeking to futher improve in design and development skills as the future full stack developer at Atmospheric Solutions.
+                    I'm a dedicated and efficient full stack developer with years of expirence in designing and
+                    developing frontend and backend web applications.
+                    Seeking to futher improve in design and development skills as the future full stack developer at
+                    Atmospheric Solutions.
                 </p>
                 <button class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded-full">Get Resume <span><img
                             src="dist/icons/download-solid.svg" alt=""
@@ -81,9 +93,9 @@
 
         </div>
 
-<div>
+        <div>
 
-</div>
+        </div>
 
     </div>
     <!-- end carosel wraper -->
@@ -91,7 +103,7 @@
     <div class="p-6 ">
         <main>
             <!-- services -->
-            <div>
+            <div id="service">
 
                 <span class="w-1/2 font-titillium"><span
                         class="mx-3 text-2xl md:text-3xl font-extrabold text-slate-400">||</span> <span
@@ -146,7 +158,11 @@
             </div>
             <!-- End services -->
 
-            <div class="my-4">
+
+
+
+            <!-- skill/about -->
+            <div class="my-4" id="about">
                 <span class="w-1/2 font-titillium"><span
                         class="mx-3 text-2xl md:text-3xl font-extrabold text-slate-400">||</span> <span
                         class="text-xl md:text-2xl font-bold text-slate-500"> My Skill</span></span>
@@ -181,6 +197,7 @@
 
 
             </div>
+            <!-- end skill/abou -->
 
 
 
@@ -188,8 +205,8 @@
 
 
 
-
-            <div>
+            <!-- project -->
+            <div id="project">
 
                 <span class="w-1/2 font-titillium"><span
                         class="mx-3 text-2xl md:text-3xl font-extrabold text-slate-400">||</span> <span
@@ -199,24 +216,25 @@
                 </h2>
 
                 <div class=" flex flex-col w-full justify-around p-6">
-                    <div class="flex flex-col md:flex-row justify-around my-4">
+                    <div class="flex flex-col md:flex-row justify-around my-6">
                         <div class="max-w-3/4 ">
                             <img src="dist/img/servax.png" alt="" class="object-center" width="300" height="300">
                         </div>
                         <div class="max-w-lg w-full md:w-1/4">
                             <p
-                                class="text-xl font-semibold capitalize font-titillium tracking-wide text-slate-700 text-left block md:text-left mb-2 md:m-3">
+                                class="text-xl font-semibold capitalize font-titillium tracking-wide text-slate-700 text-left block md:text-left mb-3 md:m-3">
                                 ServaX Landing page</h6>
-                            <p
-                                class="text-slate-500 font-titillium  md:text-lg text-sm font-semibold text-left block md:text-left mb-2 md:m-3">
-                                Frontend( Vuejs Bootstrap)</p>
-                            <p class="text-slate-700 font-josefinsans  mb-2 md:m-3">ServaX is a crypto currency token
-                                landing page made with vuejs and bootstrap.Its is a single page website with mobile
-                                responsiveness</p>
-                            <button
-                                class="bg-blue-500 hover:bg-blue-700 font-bold  outline-none focus:outline-none  py-2 px-4 md:m-3 text-white rounded-lg">
-                                <a href="https://servax.io"> view </a> <span><img src="dist/icons/eye.svg" alt=""
-                                        class="w-4 h-3 mx-1 inline text-white"></span></button>
+                                <p
+                                    class="text-slate-500 font-titillium  md:text-lg text-sm font-semibold text-left block md:text-left mb-3 md:m-3">
+                                    Frontend( Vuejs Bootstrap)</p>
+                                <p class="text-slate-700 font-josefinsans  mb-3 md:m-3">ServaX is a crypto currency
+                                    token
+                                    landing page made with vuejs and bootstrap.Its is a single page website with mobile
+                                    responsiveness</p>
+                                <button
+                                    class="bg-blue-500 hover:bg-blue-700 font-bold  outline-none focus:outline-none mb-3  py-2 px-4 md:m-3 text-white rounded-lg">
+                                    <a href="https://servax.io"> view </a> <span><img src="dist/icons/eye.svg" alt=""
+                                            class="w-4 h-3 mx-1 inline text-white"></span></button>
 
 
                         </div>
@@ -227,12 +245,12 @@
                         </div>
                         <div class="max-w-lg w-full md:w-1/4">
                             <h6
-                                class="text-xl font-semibold capitalize font-titillium tracking-wide text-slate-700 text-left block md:text-left mb-2 md:m-3">
+                                class="text-xl font-semibold capitalize font-titillium tracking-wide text-slate-700 text-left block md:text-left mb-3 md:m-3">
                                 ServaX Landing page</h6>
                             <p
-                                class="text-slate-500 font-titillium text-lg font-semibold text-left block md:text-left mb-2 md:m-3">
+                                class="text-slate-500 font-titillium text-lg font-semibold text-left block md:text-left mb-3 md:m-3">
                                 Frontend( Vuejs Bootstrap)</p>
-                            <p class="text-slate-700 font-josefinsans  mb-2 md:m-3">ServaX is a crypto currency token
+                            <p class="text-slate-700 font-josefinsans  mb-3 md:m-3">ServaX is a crypto currency token
                                 landing page made with vuejs and bootstrap.Its is a single page website with mobile
                                 responsiveness</p>
                             <button
@@ -243,96 +261,112 @@
 
                         </div>
                     </div> -->
-                    <div class="flex flex-col md:flex-row justify-around my-4">
+                    <div class="flex flex-col md:flex-row justify-around my-6">
                         <div class="max-w-3/4 ">
                             <img src="dist/img/xpressfix.png" alt="" class="object-center" width="300" height="300">
                         </div>
                         <div class="max-w-lg  md:w-1/4">
                             <p
-                                class="text-xl font-semibold capitalize font-titillium tracking-wide text-slate-700 text-left block md:text-left mb-2 md:m-3">
+                                class="text-xl font-semibold capitalize font-titillium tracking-wide text-slate-700 text-left block md:text-left mb-3 md:m-3">
                                 xpressfix(Ecommerce)</p>
                             <p
-                                class="text-slate-500  font-titillium  md:text-lg text-sm w-full font-semibold text-left block md:text-left mb-2 md:m-3">
-                                Fullstack 
+                                class="text-slate-500  font-titillium  md:text-lg text-sm w-full font-semibold text-left block md:text-left mb-3 md:m-3">
+                                Fullstack
                                 ( Html,css,js,jquery,bootstrap,laravel,mysql)</p>
-                            <p class="text-slate-700 font-josefinsans  mb-2 md:m-3">Xpressfix Ecommerce is a responsive store where user can buy and sell 
-                                uk used , new and secound hand phones , users can also buy phone repair accessories and swapping of old phones features are also available.
-                
+                            <p class="text-slate-700 font-josefinsans  mb-3 md:m-3">Xpressfix Ecommerce is a responsive
+                                store where user can buy and sell
+                                uk used , new and secound hand phones , users can also buy phone repair accessories and
+                                swapping of old phones features are also available.
+
                             </p>
                             <button
-                                class="bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 md:m-3 outline-none focus:outline-none text-white rounded-lg">
-                                <a href="https://store.tapntin.co.uk"> view </a> <span><img src="dist/icons/eye.svg" alt=""
-                                        class="w-4 h-3 mx-1 inline text-white"></span></button>
+                                class="bg-blue-500 hover:bg-blue-700 font-bold mb-3 py-2 px-4 md:m-3 outline-none focus:outline-none text-white rounded-lg">
+                                <a href="https://store.tapntin.co.uk"> view </a> <span><img src="dist/icons/eye.svg"
+                                        alt="" class="w-4 h-3 mx-1 inline text-white"></span></button>
 
 
                         </div>
                     </div>
-                   
+
+
+
+                    <!-- end project -->
 
 
 
 
+                    <!-- contact -->
+                    <div id="contact">
+                        <div class="py-6">
+                            <span class="w-1/2 font-titillium"><span
+                                    class="mx-3 text-2xl md:text-3xl font-extrabold text-slate-400">||</span> <span
+                                    class="text-xl md:text-2xl font-bold text-slate-500"> My Location </span></span>
+                            <h2
+                                class="capitalize p-2  font-extrabold font-titillium text-2xl md:text-3xl  text-slate-600">
+                                Do you want to reach out for me ?</h2>
+                            <p
+                                class="text-slate-500  font-titillium  md:text-lg text-sm w-full font-semibold text-left block md:text-left mb-3 md:m-3">
+                                reach us by social medial handles,Email or phone number available at the footer</p>
+                        </div>
+                        <div class="my-4">
+
+                            <div class="w-screen">
+                                <div>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63401.99161042019!2d3.088866854798256!3d6.693347266692888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9903ef9912d7%3A0x4f1a317e5c3e4b00!2sOta!5e0!3m2!1sen!2sng!4v1658947850296!5m2!1sen!2sng"
+                                        height="300" class="w-full" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+
+                            </div>
+                        </div>
 
 
-
-
-                    <div>
-                        <span class="w-1/2 font-titillium"><span
-                            class="mx-3 text-2xl md:text-3xl font-extrabold text-slate-400">||</span> <span
-                            class="text-xl md:text-2xl font-bold text-slate-500"> My Location </span></span>
-                    <h2 class="capitalize p-2  font-extrabold font-titillium text-2xl md:text-3xl  text-slate-600">Do you want to reach out for me  ?</h2>
 
                     </div>
-<div class="my-4">
-    
-<div class="w-screen">
-    <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63401.99161042019!2d3.088866854798256!3d6.693347266692888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9903ef9912d7%3A0x4f1a317e5c3e4b00!2sOta!5e0!3m2!1sen!2sng!4v1658947850296!5m2!1sen!2sng"  height="300" class="w-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-</div>
-
-
-    
-</div>
-
+<!-- end contact -->
                 </div>
             </div>
 
         </main>
 
 
-        
-    </div>
-<footer >
-            <div class="bg-slate-700 text-center text-white w-screen p-3 ">
-                <div class="text-center">
-                    <div class="mb-3">
-                 <p class="text-xl font-josefinsans font-bold text-white">Reach me also on</p>
-                     <div class="inline mx-auto ">
-                        <a href="#"><img src="dist/icons/mail.svg" alt="" class="inline" width="25" height="25"/></a>
-                        <a href="#"><img src="dist/icons/facebook.svg" alt="" class="inline" width="25" height="25"/></a>
-                        <a href="#"><img src="dist/icons/whatsapp.svg" alt="" class="inline" width="25" height="25"/></a>
-                        <a href="#"><img src="dist/icons/twitter.svg" alt="" class="inline" width="25" height="25"/></a>
-                        <a href="#"><img src="dist/icons/instagram.svg" alt="" class="inline" width="25" height="25"/></a>
-                     </div>
-        
-                    </div>
-                   
-                    <div class="text-xl text-white font-josefinsans font-bold">
-                       Ejike &copy; 2022
 
+    </div>
+    <footer>
+        <div class="bg-slate-700 text-center text-white w-screen p-3 ">
+            <div class="text-center">
+                <div class="mb-3">
+                    <p class="text-xl font-josefinsans font-bold text-white">Reach me also on</p>
+                    <div class="inline mx-auto ">
+                        <a href="#"><img src="dist/icons/mail.svg" alt="" class="inline" width="25" height="25" /></a>
+                        <a href="#"><img src="dist/icons/facebook.svg" alt="" class="inline" width="25"
+                                height="25" /></a>
+                        <a href="#"><img src="dist/icons/whatsapp.svg" alt="" class="inline" width="25"
+                                height="25" /></a>
+                        <a href="#"><img src="dist/icons/twitter.svg" alt="" class="inline" width="25"
+                                height="25" /></a>
+                        <a href="#"><img src="dist/icons/instagram.svg" alt="" class="inline" width="25"
+                                height="25" /></a>
                     </div>
 
                 </div>
 
+                <div class="text-xl text-white font-josefinsans font-bold">
+                    08141836706 <br>
+                    Ejike &copy; 2022
+
+                </div>
+
             </div>
-        </footer>
+
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="dist/scrollbar.js"></script>
     <script src="dist/script.js"></script>
-    
+
 </body>
 
 </html>
